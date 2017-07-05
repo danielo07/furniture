@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   root 'index#home'
   get 'sillas' => 'sillas#sillas'
   get 'mesas' => 'mesas#mesas'
+    get 'muebles' => 'muebles#muebles'
 
 
 
