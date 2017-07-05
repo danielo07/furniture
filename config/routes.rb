@@ -4,7 +4,8 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'index#home'
-  get 'sillas' => 'sillas#cata_sillas'
+  get 'sillas' => 'sillas#sillas'
+  get 'mesas' => 'mesas#mesas'
 
 
 

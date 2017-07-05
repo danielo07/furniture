@@ -1,5 +1,5 @@
 class SillasController < ApplicationController
-	def cata_sillas
+	def sillas
 		
 	end
 end
