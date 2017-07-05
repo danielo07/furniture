@@ -6,7 +6,10 @@ Rails.application.routes.draw do
   root 'index#home'
   get 'sillas' => 'sillas#sillas'
   get 'mesas' => 'mesas#mesas'
-    get 'muebles' => 'muebles#muebles'
+  get 'muebles' => 'muebles#muebles'
+  get 'lamparas' => 'lamparas#lamparas'
+  get 'closets' => 'closets#closets'
+  get 'cocinas' => 'cocinas#cocinas'
 
 
 
