@@ -16,7 +16,7 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat|Poppins" rel="stylesheet">
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700,300|Open+Sans:400,600,700,300' rel='stylesheet' type='text/css'>
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100i|Montserrat|Poppins:300|Quicksand:300" rel="stylesheet">
-  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+  <link href="https://cdnjs.com/libraries/ekko-lightbox">
 
 </head>
 <body>
@@ -84,15 +84,14 @@
         </div>
         <br/>
 
-
      <div class="m-p-g">
             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
               
              <a class="example-image-link oculta" href="http://lorempixel.com/500/500/city" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
                 <img src="http://lorempixel.com/365/365/city" data-lightbox="example-set" class="img-responsive">
               </a>
-              <a class="example-image-link" href="http://lorempixel.com/500/500/city" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
-                <img src="http://lorempixel.com/365/365/city" data-lightbox="example-set" class="img-responsive">
+              <a class="example-image-link" href="http://lorempixel.com/500/500/city" data-toggle="lightbox" data-title="Click the right half of the image to move forward.">
+                <img src="http://lorempixel.com/365/365/city" data-toggle="lightbox" class="img-responsive">
               </a>
               <a class="example-image-link oculta" href="http://lorempixel.com/500/500/city" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
                 <img src="http://lorempixel.com/365/365/city" data-lightbox="example-set" class="img-responsive">
@@ -288,7 +287,14 @@
             </div>
         </div>
     </footer>
-</body>
+<%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %> 
+
+<script type="text/javascript">
+$(document).on('click', "[data-toggle="lightbox"]", function(event) {
+    event.preventDefault();
+    $(this).ekkoLightbox();
+});
+</script>
 
 <script type="text/javascript">
   $(document).ready(function())
@@ -296,9 +302,7 @@
       'resizeDuration': 200,
       'wrapAround': true
     })
-
 </script>
-
 
 <script type="text/javascript">
 $(document).ready(function(){
