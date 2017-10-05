@@ -1,4 +1,3 @@
-
 (function ($) {
     
     // Init Wow
@@ -24,7 +23,7 @@
     });
     
     
-    jQuery to collapse the navbar on scroll
+    /*/jQuery to collapse the navbar on scroll
     $(window).scroll(function() {
         if ($(".navbar-default").offset().top > 50) {
             $(".navbar-fixed-top").addClass("top-nav-collapse");
@@ -34,4 +33,4 @@
         
     });
     
-})(jQuery); 
+})(jQuery); */
