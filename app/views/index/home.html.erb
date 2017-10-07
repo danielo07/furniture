@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
+  <meta charset="UTF-8">
 
 <%= favicon_link_tag 'favicon.ico' %>
-	<title>Furniturea4+</title>
+  <title>Furniturea4+</title>
 
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-	<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
   <script src="https://use.fontawesome.com/ebf6557c2a.js"></script>
-	<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
-	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat|Poppins" rel="stylesheet">
@@ -24,224 +24,742 @@
 </head>
 <body>
 
-	    <header class="main-header" id="header">
-        <div class="bg-color"> <!--class="bg-color"-->
-            <!--nav-->
-            <nav class="nav navbar-default navbar-fixed-top" >
+    <header class="nk-header">
+        <!--
+        START: Navbar
+    -->
+        <nav class="nk-navbar nk-navbar-top  nk-navbar-transparent nk-navbar-white-text-on-top">
+            <div class="container">
+                <div class="nk-nav-table">
+                    <a class="nk-nav-logo">
+                        <img src="img/logo-07.png" alt="" style="width:7em; height:7em;" class="nk-nav-logo-onscroll">
+                        <img src="img/logo-07.png" alt="" style="width:7em; height:7em;">
+                    </a>
+
+            <ul class="nk-nav nk-nav-right hidden-md-down" data-nav-mobile="#nk-nav-mobile" style="padding-top:30px;">
+                <li><a href="#portfolio1" class="hvr-underline-from-center" style="font-family:'Quicksand', sans-serif; font-size: 15px;">Sillas</a></li>
+                <li><a href="#portfolio2" class="hvr-underline-from-center" style="font-family:'Quicksand', sans-serif; font-size: 15px;">Mesas</a></li>
+                <li><a href="#portfolio3" class="hvr-underline-from-center" style="font-family:'Quicksand', sans-serif; font-size: 15px;">Muebles</a></li>
+                <li><a href="#portfolio4" class="hvr-underline-from-center" style="font-family:'Quicksand', sans-serif; font-size: 15px;">Lámparas</a></li>
+                <li><a href="#portfolio5" class="hvr-underline-from-center" style="font-family:'Quicksand', sans-serif; font-size: 15px;">Closets</a></li>
+                <li><a href="#portfolio6" class="hvr-underline-from-center" style="font-family:'Quicksand', sans-serif; font-size: 15px;">Cocinas</a></li>
+                <li><a href="#feature" class="hvr-underline-from-center" style="font-family:'Quicksand', sans-serif; font-size: 15px;">Nosotros</a></li>
+                <li><a href="#contact" class="hvr-underline-from-center" style="font-family:'Quicksand', sans-serif; font-size: 15px;">Contacto</a></li>
+            </ul>
+
+                    <ul class="nk-nav nk-nav-right nk-nav-icons">
+                        <li class="single-icon hidden-lg-up">
+                            <a href="#" class="nk-navbar-full-toggle">
+                                <span class="nk-icon-burger">
+                                    <span class="nk-t-1"></span>
+                                    <span class="nk-t-2"></span>
+                                    <span class="nk-t-3"></span>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- END: Navbar -->
+
+    </header>
+
+    <!--
+    START: Navbar Mobile
+-->
+    <nav class="nk-navbar nk-navbar-full nk-navbar-align-center" id="nk-nav-mobile">
+        <div class="nk-navbar-bg">
+            <div class="bg-image" style="background-image: url('assets/images/bg-menu.jpg')"></div>
+        </div>
+        <div class="nk-nav-table">
+            <div class="nk-nav-row">
                 <div class="container">
-                    <div class="col-md-12">
-                        <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mynavbar" aria-expanded="false" aria-controls="navbar">
-                            <span class="fa fa-bars"></span>
-                        </button>
-                        <a href="#">
-                        	<img src="img/logo-07.png" alt="" class="img-responsive" style="width:5em; height:5em;" align="left">
-                        </a>
+                    <div class="nk-nav-header">
+
+                        <div class="nk-nav-logo">
+                            <a class="nk-nav-logo">
+                                <img src="img/logo-07.png" alt="" width="85">
+                            </a>
                         </div>
-                        <div class="collapse navbar-collapse navbar-right" id="mynavbar">
-                            <ul class="nav navbar-nav" style="padding-top:30px;">
-                                <li class="active"><a href="#portfolio1" class="hvr-underline-from-center">Sillas</a></li>
-                                <li><a href="#portfolio2" class="hvr-underline-from-center">Mesas</a></li>
-                                <li><a href="#portfolio3" class="hvr-underline-from-center">Muebles</a></li>
-                                <li><a href="#portfolio4" class="hvr-underline-from-center">Lámparas</a></li>
-                                <li><a href="#portfolio5" class="hvr-underline-from-center">Closets</a></li>
-                                <li><a href="#portfolio6" class="hvr-underline-from-center">Cocinas</a></li>
-                                <li><a href="#feature" class="hvr-underline-from-center">Nosotros</a></li>
-                                <li><a href="#contact" class="hvr-underline-from-center">Contacto</a></li>
-                            </ul>
+
+                        <div class="nk-nav-close nk-navbar-full-toggle">
+                            <span class="nk-icon-close"></span>
                         </div>
                     </div>
                 </div>
-            </nav>
-            <!--/ nav-->
-            <div class="container text-center">    
-                <div class="wrapper" >
-                  
-                    <h2 class="top-title"></h2>
-                    <h3 class="title"></h3>
-                    <h4 class="sub-title">Creamos tu espacio</h4>
-                
+            </div>
+            <div class="nk-nav-row-full nk-nav-row">
+                <div class="nano">
+                    <div class="nano-content">
+                        <div class="nk-nav-table">
+                            <div class="nk-nav-row nk-nav-row-full nk-nav-row-center nk-navbar-mobile-content">
+                                <ul class="nk-nav">
+                                    <!-- Here will be inserted menu from [data-mobile-menu="#nk-nav-mobile"] -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              
+            </div>
+            <div class="nk-nav-row">
+                <div class="container">
+                    <div class="nk-nav-social">
+                        <ul>
+                            <li><a href="https://twitter.com/nkdevv"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="https://www.facebook.com/unvabdesign/"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="https://dribbble.com/_nK"><i class="fa fa-dribbble"></i></a></li>
+                            <li><a href="https://www.instagram.com/unvab/"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
+    </nav>
+    <!-- END: Navbar Mobile -->
+
+
+    <div class="nk-main">
+
+        <!-- START: Header Title -->
+        <div class="nk-header-title nk-header-title-full">
+            <div class="bg-image">
+                <div style="background-image: url('img/uno.jpg');"></div>
+                <div class="bg-image-overlay" style="background-color: rgba(12, 12, 12, 0.6);"></div>
+            </div>
+            <div class="nk-header-table">
+                <div class="nk-header-table-cell">
+                    <div class="container">
+                      <!--
+                        <h2 class="nk-subtitle text-white">New Branding Agency</h2>
+                      -->
+
+                        <h1 class="nk-title display-3 text-white">Creamos tu espacio
+                          <!--
+                            <br>
+                            <em class="fw-400">you publish on the web</em>
+                          -->
+                        </h1>
+
+
+                        <div class="nk-gap"></div>
+                        <div class="nk-header-text text-white">
+                            <div class="nk-gap-4"></div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <a class="nk-header-title-scroll-down text-white" href="#feature">
+                    <span class="pe-7s-angle-down"></span>
+                </a>
+            </div>
+
+        </div>
+
+        <div id="nk-header-title-scroll-down"></div>
+
+        <!-- END: Header Title -->
     </header>
     <!--/ header-->
     <!---->
     <!---->
     <!---->
     <section id="feature" class="section-padding parallax bg-image-2 ">
-    	<div class="bg-color2">
+      <div class="bg-color2">
         <div class="container">
-        	<div class="row">
+          <div class="row">
              <div class="col-sm-6 logo">
-               	<img src="img/logo-06.png" style="width:13em; height:13em;">
+                <img src="img/logo-06.png" style="width:13em; height:13em;">
              </div>
              <div class="col-sm-6 logo2 div-border">
-             	<h3 class="txt-tl">FURNITURE a4+ fue creada con la finalidad de dar un toque diferente y único a tus espacios, adaptándonos a tu estilo sacamos provecho a cada área con nuestras colecciones.</h3>
+              <h3 class="txt-tl">FURNITURE a4+ fue creada con la finalidad de dar un toque diferente y único a tus espacios, adaptándonos a tu estilo sacamos provecho a cada área con nuestras colecciones.</h3>
              </div>
             </div>
          </div>
         </div>
     </section>
-    <!---->
-    <section class="section-padding2 section wow fadeIn delay-08s" id="portfolio1">
+
+    <section class="section-padding2 section" id="portfolio1">
         <div class="container">
-        	<div>
-        		 <h1 class="head-title">Sillas</h1>
-        		 <h3 class="txt-tl2">No solo diseñamos lugares, creamos espacios</h3>	
-        	</div>
-        	<div class="grid">
-  				<div class="grid-item">
-  					<a href="sillas"><img src="img_indx/sillas/IMG_3145.jpg" alt="" class="img-responsive"></a>
-  				</div>
-  				<div class="grid-item2">
-  					<a href="sillas"><img src="img_indx/sillas/IMG_2637.jpg" alt="" class="img-responsive"></a>
-  				</div>
-  				<div class="grid-item3">
-  					<a href="sillas"><img src="img_indx/sillas/Captura1.png" alt="" class="img-responsive"></a>
-  				</div>
-  				<div class="grid-item4">
-  					<a href="sillas"><img src="img_indx/sillas/Captura2.png" alt="" class="img-responsive"></a>
-  				</div>
-  				<div class="grid-item5">
-  					<a href="sillas"><img src="img_indx/sillas/Captura3.png" alt="" class="img-responsive"></a>
-  				</div>
-			</div>
+          <div>
+             <h1 class="head-title">Sillas</h1>
+             <h3 class="txt-tl2">No solo diseñamos lugares, creamos espacios</h3> 
+          </div>
+      <div class="row row-0-gutter" >
+        <!-- start portfolio item -->
+        <div class="col-md-6 col-0-gutter" style="padding-left:1px; padding-right:1px; padding-top:1px;">
+          <div class="ot-portfolio-item">
+            <figure class="effect-bubba">
+              <img src="img_indx/sillas/IMG_3145.jpg" alt="img02" class="img-responsive" />
+              <figcaption>
+                <h2></h2>
+                <p>
+                  Ver más
+                  <i class="fa fa-long-arrow-right" style="color:#ffffff;" aria-hidden="true"></i>
+                </p>
+                <a href="sillas">View more</a>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <!-- end portfolio item -->
+        <!-- start portfolio item -->
+        <div class="col-md-3 col-0-gutter" style="padding-left:1px; padding-right:1px; padding-top:1px;">
+          <div class="ot-portfolio-item">
+            <figure class="effect-bubba">
+              <img src="img_indx/sillas/IMG_2637.jpg" alt="img02" class="img-responsive" />
+              <figcaption> 
+              <h2></h2>              
+                <p>
+                  Ver más
+                  <i class="fa fa-long-arrow-right" style="color:#ffffff;" aria-hidden="true"></i>
+                </p>
+                <a href="sillas">View more</a>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <!-- end portfolio item -->
+        <!-- start portfolio item -->
+        <div class="col-md-3 col-0-gutter" style="padding-left:1px; padding-right:1px; padding-top:1px;">
+          <div class="ot-portfolio-item">
+            <figure class="effect-bubba">
+              <img src="img_indx/sillas/Captura1.png" alt="img02" class="img-responsive" />
+              <figcaption>
+                <h2></h2>
+                <p>
+                  Ver más
+                  <i class="fa fa-long-arrow-right" style="color:#ffffff;" aria-hidden="true"></i>
+                </p>
+                <a href="sillas">View more</a>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <!-- end portfolio item -->
+        <!-- start portfolio item -->
+        <div class="col-md-3 col-0-gutter" style="padding-left:1px; padding-right:1px; padding-top:1px;">
+          <div class="ot-portfolio-item">
+            <figure class="effect-bubba">
+              <img src="img_indx/sillas/Captura2.png" alt="img02" class="img-responsive" />
+              <figcaption>
+                <h2></h2>
+                <p>
+                  Ver más
+                  <i class="fa fa-long-arrow-right" style="color:#ffffff;" aria-hidden="true"></i>
+                </p>
+                <a href="sillas">View more</a>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <!-- end portfolio item -->
+        <!-- start portfolio item -->
+        <div class="col-md-3 col-0-gutter" style="padding-left:1px; padding-right:1px; padding-top:1px;">
+          <div class="ot-portfolio-item">
+            <figure class="effect-bubba">
+              <img src="img_indx/sillas/Captura3.png" alt="img02" class="img-responsive" />
+              <figcaption>
+                <h2></h2>
+                <p>
+                  Ver más
+                  <i class="fa fa-long-arrow-right" style="color:#ffffff;" aria-hidden="true"></i>
+                </p>
+                <a href="sillas">View more</a>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <!-- end portfolio item -->
+      </div>
         </div>
     </section>
     <!---->
     <!---->
-    <section class="section-padding3 section wow fadeInUp delay-02s" id="portfolio2">
+    <section class="section-padding3 section" id="portfolio2">
         <div class="container">
-        	<div>
-        		 <h1 class="head-title2">Mesas</h1>
-        		 <h3 class="txt-tl3">No solo diseñamos lugares, creamos espacios</h3>	
-        	</div>
-        	<div class="grid">
-  				<div class="grid-item">
-  					<a href="mesas"><img src="img_indx/mesas/IMG_1489.jpg" alt="" class="img-responsive"></a>
-  				</div>
-  				<div class="grid-item2">
-  					<a href="mesas"><img src="img_indx/mesas/IMG_2639.jpg" alt="" class="img-responsive"></a>
-  				</div>
-  				<div class="grid-item3">
-  					<a href="mesas"><img src="img_indx/mesas/IMG_2651.jpg" alt="" class="img-responsive"></a>
-  				</div>
-  				<div class="grid-item4">
-  					<a href="mesas"><img src="img_indx/mesas/IMG_2710.jpg" alt="" class="img-responsive"></a>
-  				</div>
-  				<div class="grid-item5">
-  					<a href="mesas"><img src="img_indx/mesas/Captura1.png" alt="" class="img-responsive"></a>
-  				</div>
-			</div>
+          <div>
+             <h1 class="head-title2">Mesas</h1>
+             <h3 class="txt-tl3">No solo diseñamos lugares, creamos espacios</h3> 
+          </div>
+      <div class="row row-0-gutter" >
+        <!-- start portfolio item -->
+        <div class="col-md-6 col-0-gutter" style="padding-left:1px; padding-right:1px; padding-top:1px;">
+          <div class="ot-portfolio-item">
+            <figure class="effect-bubba">
+              <img src="img/IMG_3145.jpg" alt="img02" class="img-responsive" />
+              <figcaption>
+                <h2></h2>
+                <p>
+                  Ver más
+                  <i class="fa fa-long-arrow-right" style="color:#ffffff;" aria-hidden="true"></i>
+                </p>
+                <a href="#" data-toggle="modal" data-target="#Modal-1">View more</a>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <!-- end portfolio item -->
+        <!-- start portfolio item -->
+        <div class="col-md-3 col-0-gutter" style="padding-left:1px; padding-right:1px; padding-top:1px;">
+          <div class="ot-portfolio-item">
+            <figure class="effect-bubba">
+              <img src="img/IMG_3145.jpg" alt="img02" class="img-responsive" />
+              <figcaption>
+                <h2></h2>
+                <p>
+                  Ver más
+                  <i class="fa fa-long-arrow-right" style="color:#ffffff;" aria-hidden="true"></i>
+                </p>
+                <a href="#" data-toggle="modal" data-target="#Modal-2">View more</a>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <!-- end portfolio item -->
+        <!-- start portfolio item -->
+        <div class="col-md-3 col-0-gutter" style="padding-left:1px; padding-right:1px; padding-top:1px;">
+          <div class="ot-portfolio-item">
+            <figure class="effect-bubba">
+              <img src="img/IMG_3145.jpg" alt="img02" class="img-responsive" />
+              <figcaption>
+                <h2></h2>
+                <p>
+                  Ver más
+                  <i class="fa fa-long-arrow-right" style="color:#ffffff;" aria-hidden="true"></i>
+                </p>
+                <a href="#" data-toggle="modal" data-target="#Modal-2">View more</a>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <!-- end portfolio item -->
+        <!-- start portfolio item -->
+        <div class="col-md-3 col-0-gutter" style="padding-left:1px; padding-right:1px; padding-top:1px;">
+          <div class="ot-portfolio-item">
+            <figure class="effect-bubba">
+              <img src="img/IMG_3145.jpg" alt="img02" class="img-responsive" />
+              <figcaption>
+                <h2></h2>
+                <p>
+                  Ver más
+                  <i class="fa fa-long-arrow-right" style="color:#ffffff;" aria-hidden="true"></i>
+                </p>
+                <a href="#" data-toggle="modal" data-target="#Modal-2">View more</a>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <!-- end portfolio item -->
+        <!-- start portfolio item -->
+        <div class="col-md-3 col-0-gutter" style="padding-left:1px; padding-right:1px; padding-top:1px;">
+          <div class="ot-portfolio-item">
+            <figure class="effect-bubba">
+              <img src="img/IMG_3145.jpg" alt="img02" class="img-responsive" />
+              <figcaption>
+                <h2></h2>
+                <p>
+                  Ver más
+                  <i class="fa fa-long-arrow-right" style="color:#ffffff;" aria-hidden="true"></i>
+                </p>
+                <a href="#" data-toggle="modal" data-target="#Modal-2">View more</a>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <!-- end portfolio item -->
+      </div>
         </div>
     </section>
     <!---->
     <!---->
-    <section class="section-padding2 section wow fadeIn delay-08s" id="portfolio3">
+    <section class="section-padding2 section" id="portfolio3">
         <div class="container">
-        	<div>
-        		 <h1 class="head-title">Muebles</h1>
-        		 <h3 class="txt-tl2">No solo diseñamos lugares, creamos espacios</h3>	
-        	</div>
-        	<div class="grid">
-  				<div class="grid-item">
-  					<a href="muebles"><img src="img_indx/muebles/IMG_2640.jpg" alt="" class="img-responsive"></a>
-  				</div>
-  				<div class="grid-item2">
-  					<a href="muebles"><img src="img_indx/muebles/captura3.png" alt="" class="img-responsive"></a>
-  				</div>
-  				<div class="grid-item3">
-  					<a href="muebles"><img src="img_indx/muebles/Captura2.png" alt="" class="img-responsive"></a>
-  				</div>
-  				<div class="grid-item4">
-  					<a href="muebles"><img src="img_indx/muebles/Captura4.png" alt="" class="img-responsive"></a>
-  				</div>
-  				<div class="grid-item5">
-  					<a href="muebles"><img src="img_indx/muebles/Captura1.png" alt="" class="img-responsive"></a>
-  				</div>
-			</div>
+          <div>
+             <h1 class="head-title">Muebles</h1>
+             <h3 class="txt-tl2">No solo diseñamos lugares, creamos espacios</h3> 
+          </div>
+      <div class="row row-0-gutter" >
+        <!-- start portfolio item -->
+        <div class="col-md-6 col-0-gutter" style="padding-left:1px; padding-right:1px; padding-top:1px;">
+          <div class="ot-portfolio-item">
+            <figure class="effect-bubba">
+              <img src="img/IMG_3145.jpg" alt="img02" class="img-responsive" />
+              <figcaption>
+                <h2></h2>
+                <p>
+                  Ver más
+                  <i class="fa fa-long-arrow-right" style="color:#ffffff;" aria-hidden="true"></i>
+                </p>
+                <a href="#" data-toggle="modal" data-target="#Modal-1">View more</a>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <!-- end portfolio item -->
+        <!-- start portfolio item -->
+        <div class="col-md-3 col-0-gutter" style="padding-left:1px; padding-right:1px; padding-top:1px;">
+          <div class="ot-portfolio-item">
+            <figure class="effect-bubba">
+              <img src="img/IMG_3145.jpg" alt="img02" class="img-responsive" />
+              <figcaption>
+                <h2></h2>
+                <p>
+                  Ver más
+                  <i class="fa fa-long-arrow-right" style="color:#ffffff;" aria-hidden="true"></i>
+                </p>
+                <a href="#" data-toggle="modal" data-target="#Modal-2">View more</a>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <!-- end portfolio item -->
+        <!-- start portfolio item -->
+        <div class="col-md-3 col-0-gutter" style="padding-left:1px; padding-right:1px; padding-top:1px;">
+          <div class="ot-portfolio-item">
+            <figure class="effect-bubba">
+              <img src="img/IMG_3145.jpg" alt="img02" class="img-responsive" />
+              <figcaption>
+                <h2></h2>
+                <p>
+                  Ver más
+                  <i class="fa fa-long-arrow-right" style="color:#ffffff;" aria-hidden="true"></i>
+                </p>
+                <a href="#" data-toggle="modal" data-target="#Modal-2">View more</a>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <!-- end portfolio item -->
+        <!-- start portfolio item -->
+        <div class="col-md-3 col-0-gutter" style="padding-left:1px; padding-right:1px; padding-top:1px;">
+          <div class="ot-portfolio-item">
+            <figure class="effect-bubba">
+              <img src="img/IMG_3145.jpg" alt="img02" class="img-responsive" />
+              <figcaption>
+                <h2></h2>
+                <p>
+                  Ver más
+                  <i class="fa fa-long-arrow-right" style="color:#ffffff;" aria-hidden="true"></i>
+                </p>
+                <a href="#" data-toggle="modal" data-target="#Modal-2">View more</a>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <!-- end portfolio item -->
+        <!-- start portfolio item -->
+        <div class="col-md-3 col-0-gutter" style="padding-left:1px; padding-right:1px; padding-top:1px;">
+          <div class="ot-portfolio-item">
+            <figure class="effect-bubba">
+              <img src="img/IMG_3145.jpg" alt="img02" class="img-responsive" />
+              <figcaption>
+                <h2></h2>
+                <p>
+                  Ver más
+                  <i class="fa fa-long-arrow-right" style="color:#ffffff;" aria-hidden="true"></i>
+                </p>
+                <a href="#" data-toggle="modal" data-target="#Modal-2">View more</a>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <!-- end portfolio item -->
+      </div>
         </div>
     </section>
     <!---->
     <!---->
-    <section class="section-padding3 section wow fadeInUp delay-02s" id="portfolio4">
+    <section class="section-padding3 section" id="portfolio4">
         <div class="container">
-        	<div>
-        		 <h1 class="head-title2">Lámparas</h1>
-        		 <h3 class="txt-tl3">No solo diseñamos lugares, creamos espacios</h3>	
-        	</div>
-        	<div class="grid">
-  				<div class="grid-item">
-  					<a href="lamparas"><img src="img_indx/lamp/Captura1.png" alt="" class="img-responsive"></a>
-  				</div>
-  				<div class="grid-item2">
-  					<a href="lamparas"><img src="img_indx/lamp/Captura3.png" alt="" class="img-responsive"></a>
-  				</div>
-  				<div class="grid-item3">
-  					<a href="lamparas"><img src="img_indx/lamp/Captura7.png" alt="" class="img-responsive"></a>
-  				</div>
-  				<div class="grid-item4">
-  					<a href="lamparas"><img src="img_indx/lamp/Captura9.png" alt="" class="img-responsive"></a>
-  				</div>
-  				<div class="grid-item5">
-  					<a href="lamparas"><img src="img_indx/lamp/Captura5.png" alt="" class="img-responsive"></a>
-  				</div>
-			</div>
+          <div>
+             <h1 class="head-title2">Lámparas</h1>
+             <h3 class="txt-tl3">No solo diseñamos lugares, creamos espacios</h3> 
+          </div>
+      <div class="row row-0-gutter" >
+        <!-- start portfolio item -->
+        <div class="col-md-6 col-0-gutter" style="padding-left:1px; padding-right:1px; padding-top:1px;">
+          <div class="ot-portfolio-item">
+            <figure class="effect-bubba">
+              <img src="img/IMG_3145.jpg" alt="img02" class="img-responsive" />
+              <figcaption>
+                <h2></h2>
+                <p>
+                  Ver más
+                  <i class="fa fa-long-arrow-right" style="color:#ffffff;" aria-hidden="true"></i>
+                </p>
+                <a href="#" data-toggle="modal" data-target="#Modal-1">View more</a>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <!-- end portfolio item -->
+        <!-- start portfolio item -->
+        <div class="col-md-3 col-0-gutter" style="padding-left:1px; padding-right:1px; padding-top:1px;">
+          <div class="ot-portfolio-item">
+            <figure class="effect-bubba">
+              <img src="img/IMG_3145.jpg" alt="img02" class="img-responsive" />
+              <figcaption>
+                <h2></h2>
+                <p>
+                  Ver más
+                  <i class="fa fa-long-arrow-right" style="color:#ffffff;" aria-hidden="true"></i>
+                </p>
+                <a href="#" data-toggle="modal" data-target="#Modal-2">View more</a>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <!-- end portfolio item -->
+        <!-- start portfolio item -->
+        <div class="col-md-3 col-0-gutter" style="padding-left:1px; padding-right:1px; padding-top:1px;">
+          <div class="ot-portfolio-item">
+            <figure class="effect-bubba">
+              <img src="img/IMG_3145.jpg" alt="img02" class="img-responsive" />
+              <figcaption>
+                <h2></h2>
+                <p>
+                  Ver más
+                  <i class="fa fa-long-arrow-right" style="color:#ffffff;" aria-hidden="true"></i>
+                </p>
+                <a href="#" data-toggle="modal" data-target="#Modal-2">View more</a>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <!-- end portfolio item -->
+        <!-- start portfolio item -->
+        <div class="col-md-3 col-0-gutter" style="padding-left:1px; padding-right:1px; padding-top:1px;">
+          <div class="ot-portfolio-item">
+            <figure class="effect-bubba">
+              <img src="img/IMG_3145.jpg" alt="img02" class="img-responsive" />
+              <figcaption>
+                <h2></h2>
+                <p>
+                  Ver más
+                  <i class="fa fa-long-arrow-right" style="color:#ffffff;" aria-hidden="true"></i>
+                </p>
+                <a href="#" data-toggle="modal" data-target="#Modal-2">View more</a>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <!-- end portfolio item -->
+        <!-- start portfolio item -->
+        <div class="col-md-3 col-0-gutter" style="padding-left:1px; padding-right:1px; padding-top:1px;">
+          <div class="ot-portfolio-item">
+            <figure class="effect-bubba">
+              <img src="img/IMG_3145.jpg" alt="img02" class="img-responsive" />
+              <figcaption>
+                <h2></h2>
+                <p>
+                  Ver más
+                  <i class="fa fa-long-arrow-right" style="color:#ffffff;" aria-hidden="true"></i>
+                </p>
+                <a href="#" data-toggle="modal" data-target="#Modal-2">View more</a>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <!-- end portfolio item -->
+      </div>
         </div>
     </section>
     <!---->
     <!---->
-    <section class="section-padding2 section wow fadeIn delay-08s" id="portfolio5">
+    <section class="section-padding2 section" id="portfolio5">
         <div class="container">
-        	<div>
-        		 <h1 class="head-title">Closets</h1>
-        		 <h3 class="txt-tl2">No solo diseñamos lugares, creamos espacios</h3>	
-        	</div>
-        	<div class="grid">
-  				<div class="grid-item">
-  					<a href="closets"><img src="img_indx/clos/closetfurni-11.jpg" alt="" class="img-responsive"></a>
-  				</div>
-  				<div class="grid-item2">
-  					<a href="closets"><img src="img_indx/clos/Captura6.png" alt="" class="img-responsive"></a>
-  				</div>
-  				<div class="grid-item3">
-  					<a href="closets"><img src="img_indx/clos/Captura1.png" alt="" class="img-responsive"></a>
-  				</div>
-  				<div class="grid-item4">
-  					<a href="closets"><img src="img_indx/clos/Captura5.png" alt="" class="img-responsive"></a>
-  				</div>
-  				<div class="grid-item5">
-  					<a href="closets"><img src="img_indx/clos/Captura3.png" alt="" class="img-responsive"></a>
-  				</div>
-			</div>
+          <div>
+             <h1 class="head-title">Closets</h1>
+             <h3 class="txt-tl2">No solo diseñamos lugares, creamos espacios</h3> 
+          </div>
+      <div class="row row-0-gutter" >
+        <!-- start portfolio item -->
+        <div class="col-md-6 col-0-gutter" style="padding-left:1px; padding-right:1px; padding-top:1px;">
+          <div class="ot-portfolio-item">
+            <figure class="effect-bubba">
+              <img src="img/IMG_3145.jpg" alt="img02" class="img-responsive" />
+              <figcaption>
+                <h2></h2>
+                <p>
+                  Ver más
+                  <i class="fa fa-long-arrow-right" style="color:#ffffff;" aria-hidden="true"></i>
+                </p>
+                <a href="#" data-toggle="modal" data-target="#Modal-1">View more</a>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <!-- end portfolio item -->
+        <!-- start portfolio item -->
+        <div class="col-md-3 col-0-gutter" style="padding-left:1px; padding-right:1px; padding-top:1px;">
+          <div class="ot-portfolio-item">
+            <figure class="effect-bubba">
+              <img src="img/IMG_3145.jpg" alt="img02" class="img-responsive" />
+              <figcaption>
+                <h2></h2>
+                <p>
+                  Ver más
+                  <i class="fa fa-long-arrow-right" style="color:#ffffff;" aria-hidden="true"></i>
+                </p>
+                <a href="#" data-toggle="modal" data-target="#Modal-2">View more</a>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <!-- end portfolio item -->
+        <!-- start portfolio item -->
+        <div class="col-md-3 col-0-gutter" style="padding-left:1px; padding-right:1px; padding-top:1px;">
+          <div class="ot-portfolio-item">
+            <figure class="effect-bubba">
+              <img src="img/IMG_3145.jpg" alt="img02" class="img-responsive" />
+              <figcaption>
+                <h2></h2>
+                <p>
+                  Ver más
+                  <i class="fa fa-long-arrow-right" style="color:#ffffff;" aria-hidden="true"></i>
+                </p>
+                <a href="#" data-toggle="modal" data-target="#Modal-2">View more</a>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <!-- end portfolio item -->
+        <!-- start portfolio item -->
+        <div class="col-md-3 col-0-gutter" style="padding-left:1px; padding-right:1px; padding-top:1px;">
+          <div class="ot-portfolio-item">
+            <figure class="effect-bubba">
+              <img src="img/IMG_3145.jpg" alt="img02" class="img-responsive" />
+              <figcaption>
+                <h2></h2>
+                <p>
+                  Ver más
+                  <i class="fa fa-long-arrow-right" style="color:#ffffff;" aria-hidden="true"></i>
+                </p>
+                <a href="#" data-toggle="modal" data-target="#Modal-2">View more</a>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <!-- end portfolio item -->
+        <!-- start portfolio item -->
+        <div class="col-md-3 col-0-gutter" style="padding-left:1px; padding-right:1px; padding-top:1px;">
+          <div class="ot-portfolio-item">
+            <figure class="effect-bubba">
+              <img src="img/IMG_3145.jpg" alt="img02" class="img-responsive" />
+              <figcaption>
+                <h2></h2>
+                <p>
+                  Ver más
+                  <i class="fa fa-long-arrow-right" style="color:#ffffff;" aria-hidden="true"></i>
+                </p>
+                <a href="#" data-toggle="modal" data-target="#Modal-2">View more</a>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <!-- end portfolio item -->
+      </div>
         </div>
     </section>
     <!---->
     <!---->
-    <section class="section-padding3 section wow fadeInUp delay-02s" id="portfolio6">
+    <section class="section-padding3 section" id="portfolio6">
         <div class="container">
           <div>
              <h1 class="head-title2">Cocinas</h1>
              <h3 class="txt-tl3">No solo diseñamos lugares, creamos espacios</h3> 
           </div>
-          <div class="grid">
-          <div class="grid-item">
-            <a href="cocinas"><img src="img_indx/coc/DSC_0255.jpg" alt="" class="img-responsive"></a>
+      <div class="row row-0-gutter" >
+        <!-- start portfolio item -->
+        <div class="col-md-6 col-0-gutter" style="padding-left:1px; padding-right:1px; padding-top:1px;">
+          <div class="ot-portfolio-item">
+            <figure class="effect-bubba">
+              <img src="img/IMG_3145.jpg" alt="img02" class="img-responsive" />
+              <figcaption>
+                <h2></h2>
+                 <p>
+                  Ver más
+                  <i class="fa fa-long-arrow-right" style="color:#ffffff;" aria-hidden="true"></i>
+                </p>
+                <a href="#" data-toggle="modal" data-target="#Modal-1">View more</a>
+              </figcaption>
+            </figure>
           </div>
-          <div class="grid-item2">
-            <a href="cocinas"><img src="img_indx/coc/Captura3.png" alt="" class="img-responsive"></a>
+        </div>
+        <!-- end portfolio item -->
+        <!-- start portfolio item -->
+        <div class="col-md-3 col-0-gutter" style="padding-left:1px; padding-right:1px; padding-top:1px;">
+          <div class="ot-portfolio-item">
+            <figure class="effect-bubba">
+              <img src="img/IMG_3145.jpg" alt="img02" class="img-responsive" />
+              <figcaption>
+                <h2></h2>
+                <p>
+                  Ver más
+                  <i class="fa fa-long-arrow-right" style="color:#ffffff;" aria-hidden="true"></i>
+                </p>
+                <a href="#" data-toggle="modal" data-target="#Modal-2">View more</a>
+              </figcaption>
+            </figure>
           </div>
-          <div class="grid-item3">
-            <a href="cocinas"><img src="img_indx/coc/Captura4.png" alt="" class="img-responsive"></a>
+        </div>
+        <!-- end portfolio item -->
+        <!-- start portfolio item -->
+        <div class="col-md-3 col-0-gutter" style="padding-left:1px; padding-right:1px; padding-top:1px;">
+          <div class="ot-portfolio-item">
+            <figure class="effect-bubba">
+              <img src="img/IMG_3145.jpg" alt="img02" class="img-responsive" />
+              <figcaption>
+                <h2></h2>
+                <p>
+                  Ver más
+                  <i class="fa fa-long-arrow-right" style="color:#ffffff;" aria-hidden="true"></i>
+                </p>
+                <a href="#" data-toggle="modal" data-target="#Modal-2">View more</a>
+              </figcaption>
+            </figure>
           </div>
-          <div class="grid-item4">
-            <a href="cocinas"><img src="img_indx/coc/Captura5.png" alt="" class="img-responsive"></a>
+        </div>
+        <!-- end portfolio item -->
+        <!-- start portfolio item -->
+        <div class="col-md-3 col-0-gutter" style="padding-left:1px; padding-right:1px; padding-top:1px;">
+          <div class="ot-portfolio-item">
+            <figure class="effect-bubba">
+              <img src="img/IMG_3145.jpg" alt="img02" class="img-responsive" />
+              <figcaption>
+                <h2></h2>
+                <p>
+                  Ver más
+                  <i class="fa fa-long-arrow-right" style="color:#ffffff;" aria-hidden="true"></i>
+                </p>
+                <a href="#" data-toggle="modal" data-target="#Modal-2">View more</a>
+              </figcaption>
+            </figure>
           </div>
-          <div class="grid-item5">
-            <a href="cocinas"><img src="img_indx/coc/Captura2.png" alt="" class="img-responsive"></a>
+        </div>
+        <!-- end portfolio item -->
+        <!-- start portfolio item -->
+        <div class="col-md-3 col-0-gutter" style="padding-left:1px; padding-right:1px; padding-top:1px;">
+          <div class="ot-portfolio-item">
+            <figure class="effect-bubba">
+              <img src="img/IMG_3145.jpg" alt="img02" class="img-responsive" />
+              <figcaption>
+                <h2></h2>
+                <p>
+                  Ver más
+                  <i class="fa fa-long-arrow-right" style="color:#ffffff;" aria-hidden="true"></i>
+                </p>
+                <a href="#" data-toggle="modal" data-target="#Modal-2">View more</a>
+              </figcaption>
+            </figure>
           </div>
+        </div>
+        <!-- end portfolio item -->
       </div>
         </div>
     </section>
@@ -268,7 +786,7 @@
         </div>
     </section>
 
-    <hr class="botm-line">
+    <hr class="botm-line" style="color:#ffffff;">
     <!---->
     <!---->
     <footer class="" id="footer">
@@ -281,7 +799,7 @@
                     <div class="hidden-xs hidden-sm">
                         <a href="#"><i class="fa fa-instagram fa-2x"></i></a>
                         <a href="https://www.facebook.com/furniturea4/"><i class="fa fa-facebook-square fa-2x"></i></a>
-                       <!--   <a href="#"><i class="fa fa-youtube-square fa-2x"></i></a> -->
+                        <!--   <a href="#"><i class="fa fa-youtube-square fa-2x"></i></a> --> 
                     </div>
                 </div>
                 <div class="col-sm-12 footer-copyright">
@@ -300,11 +818,9 @@
     </footer>
 
 <script type="text/javascript">
- $('.grid').masonry({
-  // options...
-  itemSelector: '.grid-item',
-});
+  
 </script>
-	
+
+  
 </body>
 </html>
